@@ -56,9 +56,11 @@ nav .icon {
 
 nav a {
     color: $primary-color;
+    transition: 1.3s;
 }
 nav a:hover {
     color: $light-purple;
+    text-shadow: 0 0 20px $light-purple;
 }
 
 nav .icon .fa {
