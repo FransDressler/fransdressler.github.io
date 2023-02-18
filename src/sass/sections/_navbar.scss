@@ -1,0 +1,79 @@
+nav {
+    background-color: black;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: $primary-color;
+    align-content: space-around;
+    overflow: hidden;
+    z-index: 100000;
+    box-shadow: 4px 0 1rem $light-purple;
+    min-width: 10rem;  
+    transition: 500ms ease-in-out;
+    @include respond(tab-land) {
+        min-width: 10rem;
+        display:None;
+      }
+    @include respond(tab-port) {
+        min-width: 8rem;
+        display:None;
+      }
+    @include respond(phone) {
+        min-width: 5rem;
+        display:None;
+      }
+    @include respond(phone-xs) {
+        min-width: 3rem;
+        display:None;
+    }
+}
+
+ul {
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    list-style-type: None;
+}
+
+// nav a {
+//     position: relative;
+//     width: 100%;
+//     display: flex;
+//     text-decoration: None;
+//     color: $primary-color;
+
+// }
+
+nav .icon {
+    display: block;
+}
+
+nav a {
+    color: $primary-color;
+}
+nav a:hover {
+    color: $light-purple;
+}
+
+nav .icon .fa {
+    font-size: 20rem;
+}
+
+.logo {  
+    box-sizing: border-box;
+    max-width: 6rem;
+    margin: 0 auto;
+    margin-top: 2em;
+}
+
+.logo img {
+    object-fit: contain;
+    max-width: 6rem;
+    border-radius: 50%;
+}

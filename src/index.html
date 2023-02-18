@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <!--
   Hello!
   -
@@ -9,7 +10,6 @@
   -
   For business & inquires, contact me -> jacobojavier98@gmail.com
 -->
-<!DOCTYPE html>
 <html lang="en" class="sr">
   <head>
     <meta charset="utf-8" />
@@ -18,7 +18,7 @@
     <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
 
     <!-- Todo: put here your site title -->
-    <title>[Your name here] | Developer</title>
+    <title>Frans Dressler | Developer</title>
     <!-- Todo: add some coding keywords below - e.g: (javascript, yourusername, etc) -->
     <meta name="keywords" content="[username], [name], skill" />
     <!-- Todo: improve your SEO by adding a small description of you -->
@@ -34,25 +34,108 @@
       src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"
     ></script>
 
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <!-- Todo: remove the below script once you finish your portfolio -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <script src="https://kit.fontawesome.com/db1c3e37d1.js" crossorigin="anonymous"></script>
   </head>
 
   <!-- Todo: read the following HTML Todos to create your stunning portfolio website -->
   <body>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
     <div id="top"></div>
-
+    <nav id="navigation">
+      <div class="logo"><img   src="assets/logo_1_no_bg_big.png" alt="Logo"></div>
+      <ul>
+        <li><a href="#about">
+          <span class="icon"><i class="fa-solid fa-user fa-2x"></i></span>
+        </a></li>
+        <li><a href="#projects">
+          <span class="icon"><i class="fa-solid fa-list-check fa-2x"></i></span>
+        </a></li>
+        <li><a href="#contact">
+          <span class="icon"><i class="fa-solid fa-envelope fa-2x"></i></span>
+        </a></li>
+      </ul>
+    </nav>
     <!-- **** Hero Section **** -->
     <section id="hero" class="jumbotron">
       <div class="container">
-        <h1 class="hero-title load-hidden">
-          Hi, my name is <span class="text-color-main">Your Name</span>
+        <!-- <h1 class="hero-title load-hidden">
+          Hi, ich bin <span class="text-color-main">Frans Dressler</span>
           <br />
-          I'm the Unknown Developer.
-        </h1>
+          Der neue Developer.
+      </h1> -->
+
+
+        <div class = "introduction animate__animated animate__bounceInLeft">
+          <span>
+            <h1 class="alpha ">H</h1>
+            <h1 class="alpha ">i</h1>
+            <h1 class="alpha ">,</h1>
+          </span>
+          <span>
+            <h1 class="alpha"> I</h1>
+          </span>
+          <span>
+            <h1 class="alpha">a</h1>
+            <h1 class="alpha">m </h1>
+          </span>
+          <span>
+            <h1 class="alpha highlight">F</h1>
+            <h1 class="alpha">r</h1>
+            <h1 class="alpha">a</h1>
+            <h1 class="alpha">n</h1>
+            <h1 class="alpha">s </h1>
+          </span>
+          <span>
+            <h1 class="alpha">D</h1>
+            <h1 class="alpha">r</h1>
+            <h1 class="alpha">e</h1>
+            <h1 class="alpha">s</h1>
+            <h1 class="alpha">s</h1>
+            <h1 class="alpha">l</h1>
+            <h1 class="alpha">e</h1>
+            <h1 class="alpha">r</h1>
+          </span>
+          <span>
+            <h1 class="alpha">t</h1>
+            <h1 class="alpha">h</h1>
+            <h1 class="alpha">e </h1>
+          </span>
+          <span>
+            <h1 class="alpha">n</h1>
+            <h1 class="alpha">e</h1>
+            <h1 class="alpha">w </h1>
+          </span>
+          <span>
+            <h1 class="alpha">d</h1>
+            <h1 class="alpha">e</h1>
+            <h1 class="alpha">v</h1>
+            <h1 class="alpha">e</h1>
+            <h1 class="alpha">l</h1>
+            <h1 class="alpha">o</h1>
+            <h1 class="alpha">p</h1>
+            <h1 class="alpha">e</h1>
+            <h1 class="alpha">r</h1>
+            <h1 class="alpha">.</h1>
+          </span>
+        </div>
         <p class="hero-cta load-hidden">
           <a rel="noreferrer" class="cta-btn cta-btn--hero" href="#about"
-            >Know more</a
+            >Hire me</a
           >
         </p>
       </div>
@@ -65,35 +148,44 @@
         <h2 class="section-title load-hidden">About me</h2>
         <div class="row about-wrapper">
           <div class="col-md-6 col-sm-12">
-            <div class="about-wrapper__image load-hidden">
+            <!-- <div class="about-wrapper__image load-hidden">
               <img
                 alt="Profile Image"
                 class="img-fluid rounded shadow-lg"
                 height="auto"
                 width="300px"
                 src="assets/profile.jpg"
-                alt="Profile Image"
               />
+            </div> -->
+            <div class=" container-cube">
+              <div class="box">
+                <div class="card" id="front">HTML5</div>
+                <div class="card" id="back">CSS3</div>
+                <div class="card" id="left">Python</div>
+                <div class="card" id="right">JavaScript</div>
+                <div class="card" id="top">TensorFlow</div>
+                <div class="card" id="bottom">React.js</div>
+              </div>
             </div>
+          
           </div>
           <div class="col-md-6 col-sm-12">
             <div class="about-wrapper__info load-hidden">
               <p class="about-wrapper__info-text">
-                This is where you can describe about yourself. The more you
-                describe about yourself, the more chances you can!
+                Ich bin Frans. In meiner Freizeit programmiere ich gerne und dies seit etwa einem Jahr. Ich kenne mich im Bereich HTML, CSS, JavaScript und Python aus.
               </p>
               <p class="about-wrapper__info-text">
-                Extra Information about you! like hobbies and your goals.
+                In meiner Freizeit mache ich gerne Sport und schreibe nebenbei mein Abitur.
               </p>
               <span class="d-flex mt-3">
-                <a
+                <!-- <a
                   rel="noreferrer"
                   target="_blank"
                   class="cta-btn cta-btn--resume"
                   href="assets/resume.pdf"
                 >
                   View Resume
-                </a>
+                </a> -->
               </span>
             </div>
           </div>
@@ -102,31 +194,288 @@
     </section>
     <!-- /END About Section -->
 
+    <!-- **** Beginn skills section *** -->
+
+    <section id="skills">
+      <div class="container">
+        <h2 class="section-title load-hidden">My Skills</h2>
+        <!-- <div class="item-container">
+          <div class="row-items">
+            <div>
+              <i class="fa-solid fa-image fa-2x"></i>
+              <i class="fa-solid fa-magnifying-glass fa-2x"></i>
+              <i class="fa-solid fa-house fa-2x"></i>
+              <i class="fa-solid fa-star fa-2x"></i>
+              <i class="fa-solid fa-location-dot fa-2x"></i>
+              <i class="fa-solid fa-heart fa-2x"></i>
+              <i class="fa-solid fa-face-awesome fa-2x"></i>
+              <i class="fa-solid fa-comment fa-2x"></i>
+              <i class="fa-solid fa-camera-retro fa-2x"></i>
+              <i class="fa-solid fa-phone fa-2x"></i>
+              <i class="fa-solid fa-music fa-2x"></i>
+              <i class="fa-solid fa-bomb fa-2x"></i>
+              <i class="fa-solid fa-hippo fa-2x"></i>
+              <i class="fa-solid fa-cart-shopping fa-2x"></i>
+              <i class="fa-solid fa-clipboard fa-2x"></i>
+              <i class="fa-solid fa-paperclip fa-2x"></i>
+              <i class="fa-solid fa-shield-halved fa-2x"></i>
+              <i class="fa-solid fa-truck-fast fa-2x"></i>
+              <i class="fa-solid fa-alarm-clock fa-2x"></i>
+              <i class="fa-solid fa-ghost fa-2x"></i>
+            </div>
+            <div>
+              <i class="fa-solid fa-image fa-2x"></i>
+              <i class="fa-solid fa-magnifying-glass fa-2x"></i>
+              <i class="fa-solid fa-house fa-2x"></i>
+              <i class="fa-solid fa-star fa-2x"></i>
+              <i class="fa-solid fa-location-dot fa-2x"></i>
+              <i class="fa-solid fa-heart fa-2x"></i>
+              <i class="fa-solid fa-face-awesome fa-2x"></i>
+              <i class="fa-solid fa-comment fa-2x"></i>
+              <i class="fa-solid fa-camera-retro fa-2x"></i>
+              <i class="fa-solid fa-phone fa-2x"></i>
+              <i class="fa-solid fa-music fa-2x"></i>
+              <i class="fa-solid fa-bomb fa-2x"></i>
+              <i class="fa-solid fa-hippo fa-2x"></i>
+              <i class="fa-solid fa-cart-shopping fa-2x"></i>
+              <i class="fa-solid fa-clipboard fa-2x"></i>
+              <i class="fa-solid fa-paperclip fa-2x"></i>
+              <i class="fa-solid fa-shield-halved fa-2x"></i>
+              <i class="fa-solid fa-truck-fast fa-2x"></i>
+              <i class="fa-solid fa-alarm-clock fa-2x"></i>
+              <i class="fa-solid fa-ghost fa-2x"></i>
+            </div>
+          </div>
+          <div class="row-items">
+            <div>
+              <i class="fa-solid fa-image fa-2x"></i>
+              <i class="fa-solid fa-magnifying-glass fa-2x"></i>
+              <i class="fa-solid fa-house fa-2x"></i>
+              <i class="fa-solid fa-star fa-2x"></i>
+              <i class="fa-solid fa-location-dot fa-2x"></i>
+              <i class="fa-solid fa-heart fa-2x"></i>
+              <i class="fa-solid fa-face-awesome fa-2x"></i>
+              <i class="fa-solid fa-comment fa-2x"></i>
+              <i class="fa-solid fa-camera-retro fa-2x"></i>
+              <i class="fa-solid fa-phone fa-2x"></i>
+              <i class="fa-solid fa-music fa-2x"></i>
+              <i class="fa-solid fa-bomb fa-2x"></i>
+              <i class="fa-solid fa-hippo fa-2x"></i>
+              <i class="fa-solid fa-cart-shopping fa-2x"></i>
+              <i class="fa-solid fa-clipboard fa-2x"></i>
+              <i class="fa-solid fa-paperclip fa-2x"></i>
+              <i class="fa-solid fa-shield-halved fa-2x"></i>
+              <i class="fa-solid fa-truck-fast fa-2x"></i>
+              <i class="fa-solid fa-alarm-clock fa-2x"></i>
+              <i class="fa-solid fa-ghost fa-2x"></i>
+            </div>
+            <div>
+              <i class="fa-solid fa-image fa-2x"></i>
+              <i class="fa-solid fa-magnifying-glass fa-2x"></i>
+              <i class="fa-solid fa-house fa-2x"></i>
+              <i class="fa-solid fa-star fa-2x"></i>
+              <i class="fa-solid fa-location-dot fa-2x"></i>
+              <i class="fa-solid fa-heart fa-2x"></i>
+              <i class="fa-solid fa-face-awesome fa-2x"></i>
+              <i class="fa-solid fa-comment fa-2x"></i>
+              <i class="fa-solid fa-camera-retro fa-2x"></i>
+              <i class="fa-solid fa-phone fa-2x"></i>
+              <i class="fa-solid fa-music fa-2x"></i>
+              <i class="fa-solid fa-bomb fa-2x"></i>
+              <i class="fa-solid fa-hippo fa-2x"></i>
+              <i class="fa-solid fa-cart-shopping fa-2x"></i>
+              <i class="fa-solid fa-clipboard fa-2x"></i>
+              <i class="fa-solid fa-paperclip fa-2x"></i>
+              <i class="fa-solid fa-shield-halved fa-2x"></i>
+              <i class="fa-solid fa-truck-fast fa-2x"></i>
+              <i class="fa-solid fa-alarm-clock fa-2x"></i>
+              <i class="fa-solid fa-ghost fa-2x"></i>
+            </div>
+          </div>
+          <div class="row-items">
+            <div>
+              <i class="fa-solid fa-image fa-2x"></i>
+              <i class="fa-solid fa-magnifying-glass fa-2x"></i>
+              <i class="fa-solid fa-house fa-2x"></i>
+              <i class="fa-solid fa-star fa-2x"></i>
+              <i class="fa-solid fa-location-dot fa-2x"></i>
+              <i class="fa-solid fa-heart fa-2x"></i>
+              <i class="fa-solid fa-face-awesome fa-2x"></i>
+              <i class="fa-solid fa-comment fa-2x"></i>
+              <i class="fa-solid fa-camera-retro fa-2x"></i>
+              <i class="fa-solid fa-phone fa-2x"></i>
+              <i class="fa-solid fa-music fa-2x"></i>
+              <i class="fa-solid fa-bomb fa-2x"></i>
+              <i class="fa-solid fa-hippo fa-2x"></i>
+              <i class="fa-solid fa-cart-shopping fa-2x"></i>
+              <i class="fa-solid fa-clipboard fa-2x"></i>
+              <i class="fa-solid fa-paperclip fa-2x"></i>
+              <i class="fa-solid fa-shield-halved fa-2x"></i>
+              <i class="fa-solid fa-truck-fast fa-2x"></i>
+              <i class="fa-solid fa-alarm-clock fa-2x"></i>
+              <i class="fa-solid fa-ghost fa-2x"></i>
+            </div>
+            <div>
+              <i class="fa-solid fa-image fa-2x"></i>
+              <i class="fa-solid fa-magnifying-glass fa-2x"></i>
+              <i class="fa-solid fa-house fa-2x"></i>
+              <i class="fa-solid fa-star fa-2x"></i>
+              <i class="fa-solid fa-location-dot fa-2x"></i>
+              <i class="fa-solid fa-heart fa-2x"></i>
+              <i class="fa-solid fa-face-awesome fa-2x"></i>
+              <i class="fa-solid fa-comment fa-2x"></i>
+              <i class="fa-solid fa-camera-retro fa-2x"></i>
+              <i class="fa-solid fa-phone fa-2x"></i>
+              <i class="fa-solid fa-music fa-2x"></i>
+              <i class="fa-solid fa-bomb fa-2x"></i>
+              <i class="fa-solid fa-hippo fa-2x"></i>
+              <i class="fa-solid fa-cart-shopping fa-2x"></i>
+              <i class="fa-solid fa-clipboard fa-2x"></i>
+              <i class="fa-solid fa-paperclip fa-2x"></i>
+              <i class="fa-solid fa-shield-halved fa-2x"></i>
+              <i class="fa-solid fa-truck-fast fa-2x"></i>
+              <i class="fa-solid fa-alarm-clock fa-2x"></i>
+              <i class="fa-solid fa-ghost fa-2x"></i>
+            </div>
+          </div>
+          <div class="row-items">
+            <div>
+              <i class="fa-solid fa-image fa-2x"></i>
+              <i class="fa-solid fa-magnifying-glass fa-2x"></i>
+              <i class="fa-solid fa-house fa-2x"></i>
+              <i class="fa-solid fa-star fa-2x"></i>
+              <i class="fa-solid fa-location-dot fa-2x"></i>
+              <i class="fa-solid fa-heart fa-2x"></i>
+              <i class="fa-solid fa-face-awesome fa-2x"></i>
+              <i class="fa-solid fa-comment fa-2x"></i>
+              <i class="fa-solid fa-camera-retro fa-2x"></i>
+              <i class="fa-solid fa-phone fa-2x"></i>
+              <i class="fa-solid fa-music fa-2x"></i>
+              <i class="fa-solid fa-bomb fa-2x"></i>
+              <i class="fa-solid fa-hippo fa-2x"></i>
+              <i class="fa-solid fa-cart-shopping fa-2x"></i>
+              <i class="fa-solid fa-clipboard fa-2x"></i>
+              <i class="fa-solid fa-paperclip fa-2x"></i>
+              <i class="fa-solid fa-shield-halved fa-2x"></i>
+              <i class="fa-solid fa-truck-fast fa-2x"></i>
+              <i class="fa-solid fa-alarm-clock fa-2x"></i>
+              <i class="fa-solid fa-ghost fa-2x"></i>
+            </div>
+            <div>
+              <i class="fa-solid fa-image fa-2x"></i>
+              <i class="fa-solid fa-magnifying-glass fa-2x"></i>
+              <i class="fa-solid fa-house fa-2x"></i>
+              <i class="fa-solid fa-star fa-2x"></i>
+              <i class="fa-solid fa-location-dot fa-2x"></i>
+              <i class="fa-solid fa-heart fa-2x"></i>
+              <i class="fa-solid fa-face-awesome fa-2x"></i>
+              <i class="fa-solid fa-comment fa-2x"></i>
+              <i class="fa-solid fa-camera-retro fa-2x"></i>
+              <i class="fa-solid fa-phone fa-2x"></i>
+              <i class="fa-solid fa-music fa-2x"></i>
+              <i class="fa-solid fa-bomb fa-2x"></i>
+              <i class="fa-solid fa-hippo fa-2x"></i>
+              <i class="fa-solid fa-cart-shopping fa-2x"></i>
+              <i class="fa-solid fa-clipboard fa-2x"></i>
+              <i class="fa-solid fa-paperclip fa-2x"></i>
+              <i class="fa-solid fa-shield-halved fa-2x"></i>
+              <i class="fa-solid fa-truck-fast fa-2x"></i>
+              <i class="fa-solid fa-alarm-clock fa-2x"></i>
+              <i class="fa-solid fa-ghost fa-2x"></i>
+            </div>
+          </div>
+          <div class="row-items">
+            <div>
+              <i class="fa-solid fa-image fa-2x"></i>
+              <i class="fa-solid fa-magnifying-glass fa-2x"></i>
+              <i class="fa-solid fa-house fa-2x"></i>
+              <i class="fa-solid fa-star fa-2x"></i>
+              <i class="fa-solid fa-location-dot fa-2x"></i>
+              <i class="fa-solid fa-heart fa-2x"></i>
+              <i class="fa-solid fa-face-awesome fa-2x"></i>
+              <i class="fa-solid fa-comment fa-2x"></i>
+              <i class="fa-solid fa-camera-retro fa-2x"></i>
+              <i class="fa-solid fa-phone fa-2x"></i>
+              <i class="fa-solid fa-music fa-2x"></i>
+              <i class="fa-solid fa-bomb fa-2x"></i>
+              <i class="fa-solid fa-hippo fa-2x"></i>
+              <i class="fa-solid fa-cart-shopping fa-2x"></i>
+              <i class="fa-solid fa-clipboard fa-2x"></i>
+              <i class="fa-solid fa-paperclip fa-2x"></i>
+              <i class="fa-solid fa-shield-halved fa-2x"></i>
+              <i class="fa-solid fa-truck-fast fa-2x"></i>
+              <i class="fa-solid fa-alarm-clock fa-2x"></i>
+              <i class="fa-solid fa-ghost fa-2x"></i>
+            </div>
+            <div>
+              <i class="fa-solid fa-image fa-2x"></i>
+              <i class="fa-solid fa-magnifying-glass fa-2x"></i>
+              <i class="fa-solid fa-house fa-2x"></i>
+              <i class="fa-solid fa-star fa-2x"></i>
+              <i class="fa-solid fa-location-dot fa-2x"></i>
+              <i class="fa-solid fa-heart fa-2x"></i>
+              <i class="fa-solid fa-face-awesome fa-2x"></i>
+              <i class="fa-solid fa-comment fa-2x"></i>
+              <i class="fa-solid fa-camera-retro fa-2x"></i>
+              <i class="fa-solid fa-phone fa-2x"></i>
+              <i class="fa-solid fa-music fa-2x"></i>
+              <i class="fa-solid fa-bomb fa-2x"></i>
+              <i class="fa-solid fa-hippo fa-2x"></i>
+              <i class="fa-solid fa-cart-shopping fa-2x"></i>
+              <i class="fa-solid fa-clipboard fa-2x"></i>
+              <i class="fa-solid fa-paperclip fa-2x"></i>
+              <i class="fa-solid fa-shield-halved fa-2x"></i>
+              <i class="fa-solid fa-truck-fast fa-2x"></i>
+              <i class="fa-solid fa-alarm-clock fa-2x"></i>
+              <i class="fa-solid fa-ghost fa-2x"></i>
+            </div>
+          </div>
+        </div> -->
+        <div class="row skills-wrapper">
+          <div class="skills-container">
+            <li>
+              <h3>Front End</h3>
+              <span class="bar" id="frontend"><span class="frontend"></span></span>
+            </li>
+            <li>
+              <h3>Back End</h3>
+              <span class="bar" id="backend"><span class="backend"></span></span>
+            </li>
+            <li>
+              <h3>Machine Learning | Data Analysis</h3>
+              <span class="bar" id="data-analysis"><span class="data-analysis"></span></span>
+            </li>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- *** END SKILLS SECTION **** -->
+
     <!-- **** Projects Section **** -->
     <section id="projects">
       <div class="container">
         <div class="project-wrapper">
-          <h2 class="section-title dark-blue-text">Projects</h2>
+          <h2 class="section-title">Projects</h2>
 
           <!-- Notice: each .row is a project -->
           <div class="row">
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">Project Title 0</h3>
+                <h3 class="project-wrapper__text-title">Torgelow Betting Game</h3>
                 <div>
                   <p class="mb-4">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Excepturi neque, ipsa animi maiores repellendus distinctio
-                    aperiam earum dolor voluptatum consequatur blanditiis
-                    inventore debitis fuga numquam voluptate ex architecto
-                    itaque molestiae.
+                    Together with another student we build a betting game for our school for the last soccer championship.
+                  </p>
+                  <p class="mb-4">
+                    I did mostly the FrontEnd while my partner focussed on the BackEnd.
                   </p>
                 </div>
                 <a
                   rel="noreferrer"
                   target="_blank"
                   class="cta-btn cta-btn--hero"
-                  href="#!"
+                  href="https://torgelowtippspiel.herokuapp.com/SignIn"
                 >
                   See Live
                 </a>
@@ -134,7 +483,7 @@
                   rel="noreferrer"
                   target="_blank"
                   class="cta-btn text-color-main"
-                  href="#!"
+                  href="https://github.com/123Gurkensalat/TorgelowTipp"
                 >
                   Source Code
                 </a>
@@ -142,7 +491,7 @@
             </div>
             <div class="col-lg-8 col-sm-12">
               <div class="project-wrapper__image load-hidden">
-                <a rel="noreferrer" href="#!" target="_blank">
+                <a rel="noreferrer" href="https://github.com/123Gurkensalat/TorgelowTipp" target="_blank">
                   <div
                     data-tilt
                     data-tilt-max="4"
@@ -153,7 +502,7 @@
                     <img
                       alt="Project Image"
                       class="img-fluid"
-                      src="assets/project.jpg"
+                      src="assets/projectTipp.jpg"
                     />
                   </div>
                 </a>
@@ -163,111 +512,6 @@
           <!-- /END Project -->
 
           <!-- Notice: each .row is a project -->
-          <div class="row">
-            <div class="col-lg-4 col-sm-12">
-              <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">Project Title 1</h3>
-                <div>
-                  <p class="mb-4">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Excepturi neque, ipsa animi maiores repellendus distinctio
-                    aperiam earum dolor voluptatum consequatur blanditiis
-                    inventore debitis fuga numquam voluptate ex architecto
-                    itaque molestiae.
-                  </p>
-                </div>
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn cta-btn--hero"
-                  href="#!"
-                >
-                  See Live
-                </a>
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn text-color-main"
-                  href="#!"
-                >
-                  Source Code
-                </a>
-              </div>
-            </div>
-            <div class="col-lg-8 col-sm-12">
-              <div class="project-wrapper__image load-hidden">
-                <a rel="noreferrer" href="#!" target="_blank">
-                  <div
-                    data-tilt
-                    data-tilt-max="4"
-                    data-tilt-glare="true"
-                    data-tilt-max-glare="0.5"
-                    class="thumbnail rounded js-tilt"
-                  >
-                    <img
-                      alt="Project Image"
-                      class="img-fluid"
-                      src="assets/project.jpg"
-                    />
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <!-- /END Project -->
-
-          <!-- Notice: each .row is a project -->
-          <div class="row">
-            <div class="col-lg-4 col-sm-12">
-              <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">Project Title 2</h3>
-                <div>
-                  <p class="mb-4">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Excepturi neque, ipsa animi maiores repellendus distinctio
-                    aperiam earum dolor voluptatum consequatur blanditiis
-                    inventore debitis fuga numquam voluptate ex architecto
-                    itaque molestiae.
-                  </p>
-                </div>
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn cta-btn--hero"
-                  href="#!"
-                >
-                  See Live
-                </a>
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn text-color-main"
-                  href="#!"
-                >
-                  Source Code
-                </a>
-              </div>
-            </div>
-            <div class="col-lg-8 col-sm-12">
-              <div class="project-wrapper__image load-hidden">
-                <a rel="noreferrer" href="#!" target="_blank">
-                  <div
-                    data-tilt
-                    data-tilt-max="4"
-                    data-tilt-glare="true"
-                    data-tilt-max-glare="0.5"
-                    class="thumbnail rounded js-tilt"
-                  >
-                    <img
-                      alt="Project Image"
-                      class="img-fluid"
-                      src="assets/project.jpg"
-                    />
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
           <!-- /END Project -->
         </div>
       </div>
@@ -279,13 +523,13 @@
       <div class="container">
         <h2 class="section-title">Contact</h2>
         <div class="contact-wrapper load-hidden">
-          <p class="contact-wrapper__text">[Put your call to action here]</p>
+          <p class="contact-wrapper__text">Contact me via Email!</p>
           <a
             rel="noreferrer"
             target="_blank"
             class="cta-btn cta-btn--resume"
-            href="mailto:example@email.com"
-            >Call to Action</a
+            href="mailto:frans.dressler@gmx.de"
+            >Send an Email</a
           >
         </div>
       </div>
@@ -299,13 +543,13 @@
           <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
         </a>
         <div class="social-links">
-          <a rel="noreferrer" href="#!" target="_blank">
-            <i class="fa fa-twitter fa-inverse"></i>
+          <a rel="noreferrer" href="https://www.instagram.com/frans_dressler/?next=%2F" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
           </a>
-          <a rel="noreferrer" href="#!" target="_blank">
+          <a rel="noreferrer" href="https://www.linkedin.com/in/frans-dressler-b52496249/" target="_blank">
             <i class="fa fa-linkedin fa-inverse"></i>
           </a>
-          <a rel="noreferrer" href="#!" target="_blank">
+          <a rel="noreferrer" href="https://github.com/FransDressler" target="_blank">
             <i class="fa fa-github fa-inverse"></i>
           </a>
         </div>
@@ -314,39 +558,13 @@
 
         <!-- Notice: if you want to give me some credit, it will be huge for me! if not, put your data on it -->
         <p class="footer__text">
-          © 2021 - Template developed by
+          © 2022 - Template developed by
           <a rel="noreferrer" href="https://github.com/cobidev" target="_blank"
-            >Jacobo Martínez</a
-          >
-        </p>
-
-        <!-- TO DO: remove this entire paragraph once you finish your portfolio -->
-        <p class="mt-3 pt-3">
-          <a
-            rel="noreferrer"
-            class="github-button"
-            href="https://github.com/cobidev/simplefolio/fork"
-            data-icon="octicon-repo-forked"
-            data-size="large"
-            data-show-count="true"
-            aria-label="Fork ntkme/github-buttons on GitHub"
-            >Fork</a
-          >
-          <a
-            rel="noreferrer"
-            class="github-button"
-            href="https://github.com/cobidev/simplefolio"
-            data-icon="octicon-star"
-            data-size="large"
-            data-show-count="true"
-            aria-label="Star cobidev/simplefolio on GitHub"
-            >Star</a
+            >Frans Dressler</a
           >
         </p>
       </div>
     </footer>
-    <!-- /END Footer Section -->
-
     <script defer type="module" src="index.js"></script>
   </body>
 </html>

@@ -1,6 +1,6 @@
 #projects {
-  background-color: $white-color;
-  color: $dark-blue-text;
+  background-color: #280072 ;
+  color: $white-color;
   margin-top: -10rem;
   padding-top: 15rem;
 
@@ -74,5 +74,32 @@
         }
       }
     }
+  }
+
+  .projects-container {
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+  }
+
+  .project {
+    // background-color: $primary-color;
+    max-width: clamp(5rem, 30%, 20rem);
+  }
+
+  .project::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50px;
+    width: 7rem;
+    height: 15rem;
+    background: green;
+    border-radius: .2rem;
+    transform: skewX(15deg);
+    z-index:1000;
+    transition: .5s;
   }
 }

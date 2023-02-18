@@ -4,13 +4,13 @@
   display: flex;
   align-items: center;
   border-bottom: 0px;
-  background: $white-color;
+  background: black;
   font-weight: 400;
-  color: $dark-blue-text;
+  color: $white-color;
   padding: 0rem 5.6rem;
   margin-bottom: 0;
   top: 0;
-  left: 0;
+  left: 10rem;
   bottom: 0;
   right: 0;
   z-index: -1;
@@ -28,8 +28,8 @@
     padding: 0rem $default-font-size;
   }
 
-  .hero-title {
-    font-size: 5.6rem;
+  h1 {
+    font-size: 7.6rem;
     font-weight: 700;
     margin-bottom: 3.2rem;
     text-align: left;
@@ -65,4 +65,87 @@
       }
     }
   }
+}
+
+.alpha {
+  margin: 0.25rem;
+}
+
+.alpha.animated {
+  color: $light-purple;
+  animation: letter_bounce 0.7s ease-in-out;
+}
+
+@keyframes letter_bounce {
+  0% {
+    transform: scale(1.2,0.5);
+  }
+  16% {
+    transform: scale(1.2,0.5);
+  }
+  25% {
+    transform: scale(1.2,0.5);
+  }
+  32% {
+    transform: scale(0.8,1.1);
+  }
+  48% {
+    transform: scale(0.95, 1);
+  }
+  64% {
+    transform: scale(0.8,1.2);
+  }
+  80% {
+    transform: scale(1.15,1);
+  }
+  87% {
+    transform: scale(1.15, 1);
+  }
+  90% {
+    transform: scale(0.8,1);
+  }
+  95% {
+    transform: scale(1.05,1);
+  }
+  100% {
+    transform: scale(1,1);
+  }
+}
+
+.introduction {
+  max-width: 100rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.introduction * {
+  display: flex;
+  flex-direction: row;
+}
+
+.highlight {
+  color: $highlight-blue;
+  text-shadow: 4px 4px $shadow-purple;
+}
+
+// .introduction::after {
+//   content:"F";
+//   display: block;
+//   position: absolute;
+//   top: -30rem;
+//   right: -10rem;
+//   font-size: 80em;
+//   transform: rotate(-50deg);
+//   overflow: hidden;
+// }
+
+.circle {
+  height: 24px;
+  width: 24px;
+  border-radius: 24px;
+  background-color: $primary-color;
+  top:0;
+  left:0;
+  position: absolute;
 }

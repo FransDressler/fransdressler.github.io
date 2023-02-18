@@ -3,8 +3,9 @@
   background-image: linear-gradient(
     135deg,
     $primary-color 0%,
-    $secondary-color 100%
+    $mid-purple 100%
   );
+  
   color: $white-color;
   height: 100%;
   border-top: 0px;
@@ -77,3 +78,130 @@
     }
   }
 }
+
+.container-cube {
+  margin: auto auto;
+  margin-top: 16%;
+  max-height: 30rem;
+  max-width: 15rem;
+  top: 50vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+  perspective: 62rem;
+  
+  @include respond(tab-land) {
+    display:None;
+  }
+  @include respond(tab-port) {
+    display:None;
+  }
+  @include respond(phone) {
+    display:None;
+  }
+  @include respond(phone-xs) {
+    display:None;
+  }
+}
+
+.box {
+  margin: auto;
+  height: 16rem;
+  width: 16rem;
+  transform: rotateY(180deg);
+  transform-style: preserve-3d;
+  animation: cube 5s infinite;
+  transition: all 1s ;
+  transform: scale(2);
+}
+
+.box * {
+  transition: 1s ease-in-out;
+} 
+
+@keyframes cube {
+  0% {
+    transform: rotateX(45deg) rotateY(-45deg);
+  }
+  25% {
+    transform: rotateX(-45deg) rotateY(-45deg);
+  }
+  50% {
+    transform: rotateX(45deg) rotateY(45deg);
+  }
+  75% {
+    transform: rotateX(-45deg) rotateY(45deg);
+  }
+  100% {
+    transform: rotateX(45deg) rotateY(-45deg);
+  }
+}
+
+.card {
+  height: 16rem;
+  width: 16rem;
+  text-align: center;
+  padding: 7rem 0;
+  color: white;
+  background: hsl(359 100% 0% / 0.2);
+  // border: .2rem solid white;
+  font-size: 2em;
+  box-sizing: border-box;
+  position: absolute;
+  transform: scale(2);
+}
+
+#front  {
+  transform: translateZ(8rem);
+}
+
+#back  {
+  transform: translateZ(-8rem);
+}
+
+#left {
+  right: 8rem;
+  transform: rotateY(-90deg);
+}
+
+#right {
+  left: 8rem;
+  transform: rotateY(90deg);
+}
+
+#top {
+  bottom: 8rem;
+  transform: rotateX(90deg);
+}
+
+#bottom {
+  top: 8rem;
+  transform: rotateX(-90deg);
+ }
+
+input {
+  cursor: pointer;
+}
+
+input:focus~ .box #front {
+  transform: translateZ(11rem) rotateY(360deg);
+ }
+
+input:focus~ .box #back {
+  transform: translateZ(-11rem) rotateY(360deg);
+ }
+
+input:focus~ .box #left {
+  right: 11rem;
+ }
+
+input:focus~ .box #right {
+  left: 11rem
+ }
+
+input:focus~ .box #top {
+  bottom: 11rem;
+ }
+
+input:focus~ .box #bottom {
+  top:11rem;
+ }
