@@ -35,10 +35,12 @@
      .nav-link {
          color: white;
          font-size: 15px;
+        //  height: 30px;
      }
 
      .bg-true {
          background: linear-gradient(15deg, $primary-color, $secondary-color);
+        //  min-height: 400px;
      }
 
      .bg-false {
@@ -68,9 +70,14 @@
              margin-top: 0px;
          }
 
-         .bg-true {
-             background: None;
-         }
+         .bg-false {
+         background: transparent;
+     }
+
+      .bg-true {
+         background: transparent;
+     }
+
 
          .navbar-collapse {
          display: flex;
@@ -183,7 +190,7 @@
 		content: attr(data-glitch);
 		position: absolute;
 		height: 100%;
-        top: 30%;
+        top: 5px;
         left: 0;
 		width: 100%;
 		opacity: .8;

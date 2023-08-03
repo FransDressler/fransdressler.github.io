@@ -32,7 +32,7 @@ class About extends React.Component {
                         <div className="about-wrapper__image load-hidden">
                           <div className="card">
                               <img
-                                alt="Profile Image"
+                                alt="Profile"
                                 class="img-fluid"
                                 height="auto"
                                 src={Image}

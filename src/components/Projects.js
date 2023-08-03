@@ -27,7 +27,7 @@ class Projects extends React.Component {
             </div>
 
             <div className='project-card'>
-                <img src={MachineLearning} alt="Machine Learning Image"/>
+                <img src={MachineLearning} alt="Machine Learning"/>
                 <h3> AI rt</h3>
                 <p>In the year 2022 I build an artificial intelligence together with a friend to try to imitate the hume creation process of art. We focussed on photo to art augmentation.</p>
                 <div className="flex link-box">
@@ -36,7 +36,7 @@ class Projects extends React.Component {
             </div>
 
             <div className='project-card'>
-                <img src={MachineLearning} alt="Machine Learning Image"/>
+                <img src={MachineLearning} alt="Machine Learning"/>
                 <h3> Price Predicting Model</h3>
                 <p>Here I worked on an Machine Learning Model to predict market Prices. Therefore I build a model with around 95% accuracy which was able to adapt if there was newer data. I was hired to this job and it was my first job experience. Since I was hired I can't publish the code.</p>
             </div>

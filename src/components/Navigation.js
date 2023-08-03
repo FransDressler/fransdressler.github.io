@@ -8,13 +8,13 @@ function Navigation() {
     console.log(!isActive); // Use the updated isActive value here (not isActive)
   };
 
-  let width = document.body.clientWidth;
+  const width = document.body.clientWidth;
 
   useEffect(() => {
     if (width >= 991) {
     setisActive(!isActive);
   }
-  }, []);
+  },[width, isActive] );
 
   return (
     // <nav className="navbar navbar-expand-lg text-white" >
