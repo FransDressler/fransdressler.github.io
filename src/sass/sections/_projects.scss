@@ -1,0 +1,80 @@
+#projects {
+  background: linear-gradient(0deg, $dark-one, $primary-color);
+  color: $white-color;
+
+    .project-card-container {
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      gap: 30px;
+
+      @media (min-width: 45rem) {
+        gap: 60px
+      }
+    }
+
+    .project-card {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      background-color: #33333324;
+      align-items: center;
+      padding: 15px;
+      gap: 2.5em;
+      min-height: 50rem;
+      justify-self: center;
+      box-shadow: 0px 2px 5px 5px $dark-one;
+      transition: 300ms ease-in-out;
+      max-width: 80vw;
+
+      &:hover {
+        transform: scale(1.02);
+        box-shadow: 0px 2px 5px 5px $secondary-color;
+      }
+
+
+      * {
+        opacity: 1;
+        max-height: None;
+        max-width: 80vw;
+      }
+
+      @media (min-width:45rem) {
+        width: 350px;
+        min-height: 60rem;
+        gap: 3em;
+      }
+
+      h3 {
+        font-size: 30px;
+        font-weight: 600;
+        font-family: $ff-sans-cond;
+      }
+
+      p {
+        font-size: 15px;
+      }
+
+      img {
+        max-width: 80%;
+        margin: 0 auto;
+      }
+
+      .link-box {
+        gap: 2em;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 90%;
+        margin-top: 2em;
+
+        a {
+          text-decoration: None;
+        }
+
+        a:hover {
+          text-decoration: None;
+        }
+      }  
+    }
+  
+}
+
