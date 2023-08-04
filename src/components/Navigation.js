@@ -109,11 +109,6 @@ function Navigation() {
                  Contact
                </a>
              </li>
-             <li className="nav-item">
-               <a className="nav-link fs-700 glitch" data-glitch="Contact" href="/contact">
-                 Contact 2
-               </a>
-             </li>
             </ul>
         </div>
     </div>
