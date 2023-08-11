@@ -4,6 +4,7 @@ import Learnist from '../assets/Learnist.png';
 import Ferienhäuser from '../assets/ferienhäuser.png';
 import Gymquiz from '../assets/gymquiz.jpeg';
 import MachineLearning from '../assets/machine-learning.jpeg';
+import Countdown from '../assets/countdown.png';
 
 class Projects extends React.Component {
     
@@ -15,7 +16,15 @@ class Projects extends React.Component {
         <div class="project-wrapper">
           <h2 class="section-title white-text paths b-bot-hi1">Projects</h2>
           <div class="flex project-card-container">
-
+          <div className='project-card'>
+                <img src={Countdown} alt="Countdown Timer Preview"/>
+                <h3> Countdown Timer</h3>
+                <p>I build a working countdown timer using React.js and Sass. The Countdown starts when you start the app and resets when you reload the page. It starts at 3 days. I can also change the countdown to a set target date instead of three days but that wasn't the aim for this project.</p>
+                <div className="flex link-box">
+                    <button class="project-link-btn link-btn-light"><a href="https://github.com/FransDressler/my_programming_exercises/tree/main/launch_countdown_timer"><i className="fa fa-github fa-inverse"></i> GitHub</a></button>
+                    <button class="project-link-btn link-btn-dark"><a href="https://countdown-timer-frans.vercel.app/">See Live</a></button>
+                </div>
+            </div>
             <div className='project-card'>
                 <img src={Tippspiel} alt="Tippspiel Website"/>
                 <h3> Tipping game website</h3>
