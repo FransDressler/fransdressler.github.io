@@ -5,6 +5,7 @@ import Ferienhäuser from '../assets/ferienhäuser.png';
 import Gymquiz from '../assets/gymquiz.jpeg';
 import MachineLearning from '../assets/machine-learning.jpeg';
 import Countdown from '../assets/countdown.png';
+import Todolist from '../assets/todolist.png';
 
 class Projects extends React.Component {
     
@@ -21,17 +22,18 @@ class Projects extends React.Component {
                 <h3>Countdown Timer</h3>
                 <p>I build a working countdown timer using React.js and Sass. The Countdown starts when you start the app and resets when you reload the page. It starts at 3 days. I can also change the countdown to a set target date instead of three days but that wasn't the aim for this project.</p>
                 <div className="flex link-box">
-                    <button class="project-link-btn link-btn-light"><a href="https://github.com/FransDressler/my_programming_exercises/tree/main/todo_app"><i className="fa fa-github fa-inverse"></i> GitHub</a></button>
-                    <button class="project-link-btn link-btn-dark"><a href="https://todolist-frans.vercel.app/">See Live</a></button>
+                    <button class="project-link-btn link-btn-light"><a href="hthttps://github.com/FransDressler/my_programming_exercises/tree/main/launch_countdown_timer"><i className="fa fa-github fa-inverse"></i> GitHub</a></button>
+                    <button class="project-link-btn link-btn-dark"><a href="https://countdown-timer-frans.vercel.app/">See Live</a></button>
                 </div>
             </div>
             <div className='project-card'>
-                <img src={Countdown} alt="Todo-Website Preview"/>
+                <img src={Todolist} alt="Todo-Website Preview"/>
                 <h3>Todo-Website</h3>
                 <p>I build a online todo list in which you are able to adde tasks. Delete completed ones and also toggle between light and dark mode. I used Next.js to build this.</p>
+                
                 <div className="flex link-box">
-                    <button class="project-link-btn link-btn-light"><a href="https://github.com/FransDressler/my_programming_exercises/tree/main/"><i className="fa fa-github fa-inverse"></i> GitHub</a></button>
-                    <button class="project-link-btn link-btn-dark"><a href="https://countdown-timer-frans.vercel.app/">See Live</a></button>
+                    <button class="project-link-btn link-btn-light"><a href="https://github.com/FransDressler/my_programming_exercises/tree/main/todo_app"><i className="fa fa-github fa-inverse"></i> GitHub</a></button>
+                    <button class="project-link-btn link-btn-dark"><a href="https://todolist-frans.vercel.app/">See Live</a></button>
                 </div>
             </div>
             <div className='project-card'>
