@@ -18,16 +18,25 @@ class Projects extends React.Component {
           <div class="flex project-card-container">
           <div className='project-card'>
                 <img src={Countdown} alt="Countdown Timer Preview"/>
-                <h3> Countdown Timer</h3>
+                <h3>Countdown Timer</h3>
                 <p>I build a working countdown timer using React.js and Sass. The Countdown starts when you start the app and resets when you reload the page. It starts at 3 days. I can also change the countdown to a set target date instead of three days but that wasn't the aim for this project.</p>
                 <div className="flex link-box">
-                    <button class="project-link-btn link-btn-light"><a href="https://github.com/FransDressler/my_programming_exercises/tree/main/launch_countdown_timer"><i className="fa fa-github fa-inverse"></i> GitHub</a></button>
+                    <button class="project-link-btn link-btn-light"><a href="https://github.com/FransDressler/my_programming_exercises/tree/main/todo_app"><i className="fa fa-github fa-inverse"></i> GitHub</a></button>
+                    <button class="project-link-btn link-btn-dark"><a href="https://todolist-frans.vercel.app/">See Live</a></button>
+                </div>
+            </div>
+            <div className='project-card'>
+                <img src={Countdown} alt="Todo-Website Preview"/>
+                <h3>Todo-Website</h3>
+                <p>I build a online todo list in which you are able to adde tasks. Delete completed ones and also toggle between light and dark mode. I used Next.js to build this.</p>
+                <div className="flex link-box">
+                    <button class="project-link-btn link-btn-light"><a href="https://github.com/FransDressler/my_programming_exercises/tree/main/"><i className="fa fa-github fa-inverse"></i> GitHub</a></button>
                     <button class="project-link-btn link-btn-dark"><a href="https://countdown-timer-frans.vercel.app/">See Live</a></button>
                 </div>
             </div>
             <div className='project-card'>
                 <img src={Tippspiel} alt="Tippspiel Website"/>
-                <h3> Tipping game website</h3>
+                <h3>Tipping game website</h3>
                 <p>Together with a friend I build a tipping website for our school for the soccer worldcup. The website alowed you to bet on different games. The winning price for the best tipper was a cake <br/><br/> Sadly the website is currently offline but will be online again for the next worldcup.</p>
                 {/* <div className="flex link-box">
                     <button class="project-link-btn link-btn-light"><a href=""><i className="fa fa-github fa-inverse"></i> GitHub</a></button>
