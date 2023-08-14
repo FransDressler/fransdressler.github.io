@@ -42,7 +42,7 @@ class Projects extends React.Component {
                 <p>I'm currently building a landing page for vacation homes on the german island Poel. So far only the homepage is nearly finished.</p>
                 <div className="flex link-box">
                     <button class="project-link-btn link-btn-light"><a href="https://github.com/FransDressler/ferienhaus-poel"><i className="fa fa-github fa-inverse"></i> GitHub</a></button>
-                    <button class="project-link-btn link-btn-dark"><a href="https://todolist-frans.vercel.app/">See Live</a></button>
+                    <button class="project-link-btn link-btn-dark"><a href="https://ferienhaus-poel.vercel.app/">See Live</a></button>
                 </div>
             </div>
             <div className='project-card'>
