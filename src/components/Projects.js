@@ -37,6 +37,15 @@ class Projects extends React.Component {
                 </div>
             </div>
             <div className='project-card'>
+                <img src={Ferienhäuser} alt="Landing Page for vacation homes on Poel"/>
+                <h3> Landingpage for vacation homes</h3>
+                <p>I'm currently building a landing page for vacation homes on the german island Poel. So far only the homepage is nearly finished.</p>
+                <div className="flex link-box">
+                    <button class="project-link-btn link-btn-light"><a href="https://github.com/FransDressler/ferienhaus-poel"><i className="fa fa-github fa-inverse"></i> GitHub</a></button>
+                    <button class="project-link-btn link-btn-dark"><a href="https://todolist-frans.vercel.app/">See Live</a></button>
+                </div>
+            </div>
+            <div className='project-card'>
                 <img src={Tippspiel} alt="Tippspiel Website"/>
                 <h3>Tipping game website</h3>
                 <p>Together with a friend I build a tipping website for our school for the soccer worldcup. The website alowed you to bet on different games. The winning price for the best tipper was a cake <br/><br/> Sadly the website is currently offline but will be online again for the next worldcup.</p>
@@ -65,15 +74,6 @@ class Projects extends React.Component {
                 <img src={Learnist} alt="Learnist Logo"/>
                 <h3>Worked as a python tutor</h3>
                 <p>I also worked as a python tutor for children. I explained to them the basic concepts of python. The company that hired my was Learnist and I'm still working there.</p>
-            </div>
-
-            <div className='project-card'>
-                <img src={Ferienhäuser} alt="Landing Page for vacation homes on Poel"/>
-                <h3> Landingpage for vacation homes</h3>
-                <p>I'm currently building a landing page for vacation homes on the german island Poel. So far only the homepage is nearly finished.</p>
-                <div className="flex link-box">
-                    <button class="project-link-btn link-btn-light"><a href="https://github.com/FransDressler/ferienhaus-poel"><i className="fa fa-github fa-inverse"></i> GitHub</a></button>
-                </div>
             </div>
 
             <div className='project-card'>
