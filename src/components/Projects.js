@@ -2,6 +2,8 @@ import React from 'react';
 import Tippspiel from '../assets/tippspiel.png';
 import Learnist from '../assets/Learnist.png';
 import Ferienhäuser from '../assets/ferienhäuser.png';
+import BaumaschinenDressler from '../assets/bau-shop-dr.png';
+import FaceRecognition from '../assets/face-recognition.png'
 import Gymquiz from '../assets/gymquiz.jpeg';
 import MachineLearning from '../assets/machine-learning.jpeg';
 import Countdown from '../assets/countdown.png';
@@ -18,11 +20,38 @@ class Projects extends React.Component {
           <h2 class="section-title white-text paths b-bot-hi1">Projects</h2>
           <div class="flex project-card-container">
           <div className='project-card'>
+                <img src={Ferienhäuser} alt="Online Shop for small company"/>
+                <h3>Baumaschinen & Geräte GmbH Dressler</h3>
+                <p>I build an online shop system for a small german construction company. The company owner has its own administrator page where it can add and rework the products for the page.</p>
+                <div className="flex link-box">
+                    <button class="project-link-btn link-btn-light"><a href="https://github.com/FransDressler/baumachinen-shop"><i className="fa fa-github fa-inverse"></i> GitHub</a></button>
+                    <button class="project-link-btn link-btn-dark"><a href="https://baumachinen-shop.vercel.app/">See Live</a></button>
+                </div>
+            </div>
+          <div className='project-card'>
+                <img src={BaumaschinenDressler} alt="Landing Page for vacation homes on Poel"/>
+                <h3> Landingpage for vacation homes</h3>
+                <p>I build a landing page for vacation homes with a backend booking system and an administrator page.</p>
+                <div className="flex link-box">
+                    <button class="project-link-btn link-btn-light"><a href="https://github.com/FransDressler/ferienhaus-poel"><i className="fa fa-github fa-inverse"></i> GitHub</a></button>
+                    <button class="project-link-btn link-btn-dark"><a href="https://ferienhaus-poel.vercel.app/">See Live</a></button>
+                </div>
+            </div>
+            <div className='project-card'>
+                <img src={FaceRecognition} alt="Online Shop for small company"/>
+                <h3>Face-Recognition</h3>
+                <p>I build a website in which you can register and use the link of a foto to detect the faces in it. This side had the purpose to learn more about apis.</p>
+                <div className="flex link-box">
+                    <button class="project-link-btn link-btn-light"><a href="https://github.com/FransDressler/my_programming_exercises/tree/main/face-recognition"><i className="fa fa-github fa-inverse"></i> GitHub</a></button>
+                    <button class="project-link-btn link-btn-dark"><a href="https://face-recognition-frans.vercel.app/">See Live</a></button>
+                </div>
+            </div>
+          <div className='project-card'>
                 <img src={Countdown} alt="Countdown Timer Preview"/>
                 <h3>Countdown Timer</h3>
                 <p>I build a working countdown timer using React.js and Sass. The Countdown starts when you start the app and resets when you reload the page. It starts at 3 days. I can also change the countdown to a set target date instead of three days but that wasn't the aim for this project.</p>
                 <div className="flex link-box">
-                    <button class="project-link-btn link-btn-light"><a href="hthttps://github.com/FransDressler/my_programming_exercises/tree/main/launch_countdown_timer"><i className="fa fa-github fa-inverse"></i> GitHub</a></button>
+                    <button class="project-link-btn link-btn-light"><a href="https://github.com/FransDressler/my_programming_exercises/tree/main/launch_countdown_timer"><i className="fa fa-github fa-inverse"></i> GitHub</a></button>
                     <button class="project-link-btn link-btn-dark"><a href="https://countdown-timer-frans.vercel.app/">See Live</a></button>
                 </div>
             </div>
@@ -37,15 +66,6 @@ class Projects extends React.Component {
                 </div>
             </div>
             <div className='project-card'>
-                <img src={Ferienhäuser} alt="Landing Page for vacation homes on Poel"/>
-                <h3> Landingpage for vacation homes</h3>
-                <p>I'm currently building a landing page for vacation homes on the german island Poel. So far only the homepage is nearly finished.</p>
-                <div className="flex link-box">
-                    <button class="project-link-btn link-btn-light"><a href="https://github.com/FransDressler/ferienhaus-poel"><i className="fa fa-github fa-inverse"></i> GitHub</a></button>
-                    <button class="project-link-btn link-btn-dark"><a href="https://ferienhaus-poel.vercel.app/">See Live</a></button>
-                </div>
-            </div>
-            <div className='project-card'>
                 <img src={Tippspiel} alt="Tippspiel Website"/>
                 <h3>Tipping game website</h3>
                 <p>Together with a friend I build a tipping website for our school for the soccer worldcup. The website alowed you to bet on different games. The winning price for the best tipper was a cake <br/><br/> Sadly the website is currently offline but will be online again for the next worldcup.</p>
@@ -55,14 +75,14 @@ class Projects extends React.Component {
                 </div> */}
             </div>
 
-            <div className='project-card'>
+            {/* <div className='project-card'>
                 <img src={MachineLearning} alt="Machine Learning"/>
                 <h3> AI rt</h3>
                 <p>In the year 2022 I build an artificial intelligence together with a friend to try to imitate the hume creation process of art. We focussed on photo to art augmentation.</p>
                 <div className="flex link-box">
                     <button class="project-link-btn link-btn-light"><a href="https://github.com/FransDressler/AIrt"><i className="fa fa-github fa-inverse"></i> GitHub</a></button>
                 </div>
-            </div>
+            </div> */}
 
             <div className='project-card'>
                 <img src={MachineLearning} alt="Machine Learning"/>
@@ -70,11 +90,11 @@ class Projects extends React.Component {
                 <p>Here I worked on an Machine Learning Model to predict market Prices. Therefore I build a model with around 95% accuracy which was able to adapt if there was newer data. I was hired to this job and it was my first job experience. Since I was hired I can't publish the code.</p>
             </div>
 
-            <div className='project-card'>
+            {/* <div className='project-card'>
                 <img src={Learnist} alt="Learnist Logo"/>
                 <h3>Worked as a python tutor</h3>
                 <p>I also worked as a python tutor for children. I explained to them the basic concepts of python. The company that hired my was Learnist and I'm still working there.</p>
-            </div>
+            </div> */}
 
             <div className='project-card'>
                 <img src={Gymquiz} alt="Gym quiz website"/>

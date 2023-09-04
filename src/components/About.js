@@ -71,11 +71,7 @@ class About extends React.Component {
                         <p class="title"><i className="fa-brands fa-react fa-4x"></i></p>
                       </div>
                     </div>
-                    <div class="skill-card">
-                      <div class="skill-card-info">
-                        <p class="title"><i className="fa-brands fa-vuejs fa-4x"></i></p>
-                      </div>
-                    </div>
+                    
                       
                     </div>
                   </div>
