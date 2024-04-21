@@ -1,6 +1,7 @@
 import React from 'react';
 import Tippspiel from '../assets/tippspiel.png';
 import Learnist from '../assets/Learnist.png';
+import Orion from '../assets/ORION.jpg';
 import Ferienhäuser from '../assets/ferienhäuser.png';
 import BaumaschinenDressler from '../assets/bau-shop-dr.png';
 import FaceRecognition from '../assets/face-recognition.png'
@@ -20,6 +21,13 @@ class Projects extends React.Component {
           <h2 class="section-title white-text paths b-bot-hi1">Projects</h2>
           <div class="flex project-card-container">
           <div className='project-card'>
+                <img src={Orion} alt="Orion"/>
+                <h3>O.R.I.O.N</h3>
+                <p>An assisstant for my MacBook that is controlled via Speech. He is able to control multiple apps and do simple tasks on my MacBook. There is currently no public GitHub folder for him. I'm currently experimenting with Retrieval Augmented Generation to give him somewhat of a long term memory.</p>
+                <div className="flex link-box">
+                </div>
+          </div>
+          <div className='project-card'>
                 <img src={BaumaschinenDressler} alt="Online Shop for small company"/>
                 <h3>Baumaschinen & Geräte GmbH Dressler</h3>
                 <p>I build an online shop system for a small german construction company. The company owner has its own administrator page where it can add and rework the products for the page.</p>
@@ -27,7 +35,7 @@ class Projects extends React.Component {
                     <button class="project-link-btn link-btn-light"><a href="https://github.com/FransDressler/baumachinen-shop"><i className="fa fa-github fa-inverse"></i> GitHub</a></button>
                     <button class="project-link-btn link-btn-dark"><a href="https://baumachinen-shop.vercel.app/">See Live</a></button>
                 </div>
-            </div>
+          </div>
           <div className='project-card'>
                 <img src={Ferienhäuser} alt="Landing Page for vacation homes on Poel"/>
                 <h3> Landingpage for vacation homes</h3>
