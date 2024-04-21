@@ -1,0 +1,264 @@
+/* Call to Action Button */
+.cta-btn {
+  display: inline-block;
+  position: relative;
+  padding: 0.8rem $fs-500;
+  font-weight: bold;
+  line-height: 1;
+  z-index: 1;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.6s;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0px;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.3s;
+  }
+}
+
+/* Hero Style */
+.cta-btn--hero {
+  @include supportColorForIE11();
+  border-width: 2px;
+  border-style: solid;
+  -moz-border-image: -moz-linear-gradient(
+    135deg,
+    $primary-color 0%,
+    $highlight-two 100%,
+  );
+  -webkit-border-image: -webkit-linear-gradient(
+    135deg,
+    $primary-color 0%,
+    $highlight-two 100%
+  );
+  border-image: linear-gradient(
+    135deg,
+    $primary-color 0%,
+    $highlight-two 100%
+  );
+  -webkit-border-image-slice: 1;
+  border-image-slice: 1;
+  @include supportIE11() {
+    color: $highlight-two !important;
+    &:hover {
+      color: $white-color !important;
+    }
+  }
+
+  @include respond(phone) {
+    background-image: none;
+    border: 2px solid $secondary-color;
+    -webkit-text-fill-color: $secondary-color;
+  }
+
+  &::after {
+    background-image: linear-gradient(
+      135deg,
+      $primary-color 0%,
+      $secondary-color 100%
+    );
+
+    @include respond(phone) {
+      background-image: none;
+    }
+  }
+
+  &:hover {
+    -webkit-text-fill-color: $white-color;
+    text-decoration: none;
+
+    @include respond(phone) {
+      -webkit-text-fill-color: $secondary-color;
+    }
+
+    &::after {
+      width: 100%;
+    }
+  }
+}
+
+.btn-glitch,.btn-glitch::after {
+  padding: 10px 50px;
+  font-size: 20px;
+  font-weight: 400;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: transparent;
+  position: relative;
+  border: 1px solid white;
+  
+}
+
+.btn-glitch::after {
+  --move1: inset(50% 50% 50% 50%);
+  --move2: inset(31% 0 40% 0);
+  --move3: inset(39% 0 15% 0);
+  --move4: inset(45% 0 40% 0);
+  --move5: inset(45% 0 6% 0);
+  --move6: inset(14% 0 61% 0);
+  clip-path: var(--move1);
+  content: attr(glitch-content);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+}
+
+.btn-glitch:hover::after {
+  animation: glitch_4011 1s;
+  text-shadow: 10 10px 10px black;
+  animation-timing-function: steps(2, end);
+  text-shadow: -3px -3px 0px $highlight-two, 3px 3px 0px $highlight-one;
+  background-color: transparent;
+  border: 3px solid $highlight-one;
+}
+
+.btn-glitch:hover {
+  text-shadow: -1px -1px 0px $highlight-two, 1px 1px 0px $highlight-one;
+}
+
+.btn-glitch:hover {
+  background-color: transparent;
+  border: 1px solid $highlight-two;
+  box-shadow: 0px 10px 10px -10px $highlight-two;
+}
+
+@keyframes glitch_4011 {
+  0% {
+    clip-path: var(--move1);
+    transform: translate(0px,-10px);
+  }
+
+  10% {
+    clip-path: var(--move2);
+    transform: translate(-10px,10px);
+  }
+
+  20% {
+    clip-path: var(--move3);
+    transform: translate(10px,0px);
+  }
+
+  30% {
+    clip-path: var(--move4);
+    transform: translate(-10px,10px);
+  }
+
+  40% {
+    clip-path: var(--move5);
+    transform: translate(10px,-10px);
+  }
+
+  50% {
+    clip-path: var(--move6);
+    transform: translate(-10px,10px);
+  }
+
+  60% {
+    clip-path: var(--move1);
+    transform: translate(10px,-10px);
+  }
+
+  70% {
+    clip-path: var(--move3);
+    transform: translate(-10px,10px);
+  }
+
+  80% {
+    clip-path: var(--move2);
+    transform: translate(10px,-10px);
+  }
+
+  90% {
+    clip-path: var(--move4);
+    transform: translate(-10px,10px);
+  }
+
+  100% {
+    clip-path: var(--move1);
+    transform: translate(0);
+  }
+}  
+
+.project-link-btn {
+  padding: 10px;
+  width: 40%;
+  border-radius: 5px;
+  background-color: transparent;
+  transition: 200ms;
+  min-width: 170px;
+}
+
+.link-btn-light {
+  border: 2px solid $white-color;
+  color: $white-color;
+}
+
+.link-btn-light *{
+  color: $white-color;
+}
+
+.link-btn-light:hover {
+  border: 2px solid $white-color;
+  background-color: #ffffff6c;
+  color: white;
+  box-shadow: 0 7px 5px -5px rgb(209, 209, 209);
+}
+
+.link-btn-light:hover *{
+  color: white;
+}
+
+.link-btn-dark {
+  background: white;
+  color: $dark-blue-text;
+  border: $white-color 2px solid;
+}
+
+.link-btn-dark *{
+  color: $dark-blue-text;
+}
+
+.link-btn-dark:hover {
+  background: rgba(255, 255, 255, 0.469);
+  color: $dark-blue-text;
+  box-shadow: 0 7px 5px -5px rgb(209, 209, 209);
+}
+
+.link-btn-dark:hover *{
+  color: $dark-blue-text;
+}
+
+
+/* Resume Style */
+.cta-btn--resume {
+  color: $white-color;
+  border: 2px solid $white-color;
+
+  &::after {
+    background: $white-color;
+  }
+
+  &:hover {
+    color: $secondary-color;
+    text-decoration: none;
+
+    &::after {
+      width: 100%;
+    }
+  }
+}
+
+/* Arrow Button */
+.up i {
+  color: #272727;
+}
+
